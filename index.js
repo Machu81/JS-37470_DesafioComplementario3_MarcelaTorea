@@ -7,7 +7,7 @@ class Capacitacion {
     constructor(id, nombre, cargaHoraria, honorariosOradorHora, precioPorHora, cupo){
         this.id = id;
         this.nombre = nombre.toUpperCase();
-        this.cargaHoraria = cargaHoraria,
+        this.cargaHoraria = cargaHoraria;
         this.honorariosOradorHora = honorariosOradorHora;
         this.precioPorHora = precioPorHora;
         this.cupo = cupo;
@@ -36,10 +36,9 @@ function registrarCapacitacion(){
 
         let capacitacionACargar = new Capacitacion(id, nombre, cargaHoraria, honorariosOradorHora, precioPorHora, cupo);
 
-        CAPACITACIONES.push(capacitacionACargar)
+        CAPACITACIONES.push(capacitacionACargar);
         }
 }
-
 
 function agregarCapacitacionTabla(){
     CAPACITACIONES.forEach((capacitacion) => {
